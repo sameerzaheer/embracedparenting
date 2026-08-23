@@ -1226,7 +1226,8 @@ footer {
 
   .framework-grid,
   .insta-grid,
-  .testi-grid {
+  .testi-grid,
+  .expectation-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1644,10 +1645,6 @@ footer {
   .logo-mark img {
     width: 100%;
     height: auto;
-  }
-
-  .logo-mark img {
-    width: 100%;
   }
 
   .hero {
