@@ -21,25 +21,25 @@
 </head>
 <body>
   <header>
-    <nav class="wrap">
+    <nav class="wrap" aria-label="Main navigation">
       <a href="index.html" class="logo" aria-label="EmbracedParenting home">
-        <span class="logo-mark" aria-hidden="true"><img src="images/logo.png" alt="EmbracedParenting logo"></span>
+        <span class="logo-mark" aria-hidden="true"><img src="images/logo.png" alt="EmbracedParenting logo" loading="lazy"></span>
       </a>
       <div class="navlinks">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="booking.html">Booking</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" class="active" aria-label="Home page">Home</a>
+        <a href="about.html" aria-label="About page">About</a>
+        <a href="services.html" aria-label="Services page">Services</a>
+        <a href="booking.html" aria-label="Booking page">Booking</a>
+        <a href="contact.html" aria-label="Contact page">Contact</a>
       </div>
       <div class="navcta">
-        <a href="https://calendly.com/laraibsshaikh10/30min" class="btn btn-primary" style="padding: 11px 20px; font-size: 14px;">Book A Free Discovery Call</a>
+        <a href="https://calendly.com/laraibsshaikh10/30min" class="btn btn-primary" style="padding: 11px 20px; font-size: 14px;" aria-label="Book a free discovery call with Laraib" target="_blank" rel="noopener noreferrer">Book A Free Discovery Call</a>
       </div>
       <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
       </button>
     </nav>
-    <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
@@ -54,11 +54,11 @@
       <div class="wrap hero-grid">
         <div class="hero-copy reveal">
           <!-- <div class="eyebrow">Jai Certified Parent Coach · Mississauga, ON</div> -->
-          <h1>Parenting is hard1234.<br />You don’t have to it <em>alone</em>.</h1>
+          <h1>Parenting is hard.<br />You don't have to do it <em>alone</em>.</h1>
           <p class="sub">Support for parents who want more calm, stronger connection, and calmer responses at home — with a grounded, compassionate approach that respects your family’s story.</p>
           <div class="hero-ctas">
-            <a href="https://calendly.com/laraibsshaikh10/30min" class="btn btn-primary">Book A Free Discovery Call</a>
-            <a href="services.html" class="btn btn-ghost">Learn More</a>
+            <a href="https://calendly.com/laraibsshaikh10/30min" class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Book a free discovery call with Laraib">Book A Free Discovery Call</a>
+            <a href="services.html" class="btn btn-ghost" aria-label="Learn more about services">Learn More</a>
           </div>
           <div class="trustline">
             <span><i class="dot"></i>English · Urdu · Hindi</span>
@@ -69,7 +69,7 @@
         <div class="hero-side reveal">
           <div class="hero-visual">
             <div class="portrait">
-              <img src="images/home.jpeg" alt="Laraib Shaikh, Jai Certified Parent Coach">
+              <img src="images/home.jpeg" alt="Laraib Shaikh, Jai Certified Parent Coach" loading="lazy">
             </div>
             <div class="hero-card">
               <div class="badge">A supportive space for real parenting challenges</div>
@@ -77,16 +77,16 @@
               <p>Through nervous-system awareness, attachment-based care, and practical guidance, coaching helps families feel more grounded and connected.</p>
               <ul>
                 <li>Support for parents navigating stress, emotion, and big feelings</li>
-                <li>Gentle tools for everyday moments that feel hard</li>
+                <li>Gentle tools for every day moments that feel hard</li>
                 <li>Guidance rooted in compassion, not shame</li>
               </ul>
-              <a href="about.html" class="hero-link">Discover the approach →</a>
+              <a href="about.html" class="hero-link" aria-label="Discover the approach">Discover the approach →</a>
             </div>
           </div>
         </div>
       </div>
       <div class="wave-band">
-        <svg viewBox="0 0 1200 90" preserveAspectRatio="none">
+        <svg viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
           <path d="M0,45 L20,20 L40,70 L60,10 L80,60 L100,25 L120,55 L140,15 L160,65 L180,30 L200,50 L220,18 L240,62 L260,28 L280,58 L300,22 L320,48 L340,14 L360,66 L380,32 L400,52 L420,20 L440,60 L460,26 L480,54 L500,30 L520,46 L540,22 L560,58 L580,34 L600,45 L620,30 L640,50 L660,32 L680,46 L700,34 L720,44 L740,36 L760,42 L780,38 L800,42 L820,38 L840,42 L860,38 L880,41 L900,39 L920,41 L940,39 L960,41 L980,40 L1000,41 L1020,40 L1200,40" fill="none" stroke="var(--clay)" stroke-width="3" stroke-linecap="round" />
         </svg>
       </div>
@@ -101,7 +101,7 @@
           <p>This framework highlights the heart of the coaching: connection, calm, and confidence. It is designed to help families feel safer and more attuned in the everyday.</p>
         </div>
         <div class="framework-grid">
-          <div class="framework-card reveal">
+          <article class="framework-card reveal">
             <div class="framework-card-intro">
               <div class="framework-card-mark">E</div>
               <div>
@@ -110,8 +110,8 @@
               </div>
             </div>
             <p>We begin by understanding the emotions beneath the behavior, so responses feel less reactive and more attuned.</p>
-          </div>
-          <div class="framework-card reveal">
+          </article>
+          <article class="framework-card reveal">
             <div class="framework-card-intro">
               <div class="framework-card-mark">M</div>
               <div>
@@ -120,8 +120,8 @@
               </div>
             </div>
             <p>Parents learn how regulation supports better communication, less escalation, and more steadiness across the day.</p>
-          </div>
-          <div class="framework-card reveal">
+          </article>
+          <article class="framework-card reveal">
             <div class="framework-card-intro">
               <div class="framework-card-mark">B</div>
               <div>
@@ -130,8 +130,8 @@
               </div>
             </div>
             <p>Support is designed to strengthen security, trust, and belonging — especially when parenting has felt strained or overwhelming.</p>
-          </div>
-          <div class="framework-card reveal">
+          </article>
+          <article class="framework-card reveal">
             <div class="framework-card-intro">
               <div class="framework-card-mark">R</div>
               <div>
@@ -140,8 +140,8 @@
               </div>
             </div>
             <p>Every family is met with care, curiosity, and respect — including cultural, faith, and lived-experience differences.</p>
-          </div>
-          <div class="framework-card reveal">
+          </article>
+          <article class="framework-card reveal">
             <div class="framework-card-intro">
               <div class="framework-card-mark">A</div>
               <div>
@@ -150,8 +150,8 @@
               </div>
             </div>
             <p>We slow down and identify what a child may be communicating through their behavior, so responses become more intentional.</p>
-          </div>
-          <div class="framework-card reveal">
+          </article>
+          <article class="framework-card reveal">
             <div class="framework-card-intro">
               <div class="framework-card-mark">C</div>
               <div>
@@ -160,8 +160,8 @@
               </div>
             </div>
             <p>The process is grounded in compassion for both the child and the parent, especially in moments of stress and doubt.</p>
-          </div>
-          <div class="framework-card reveal">
+          </article>
+          <article class="framework-card reveal">
             <div class="framework-card-intro">
               <div class="framework-card-mark">E</div>
               <div>
@@ -170,8 +170,8 @@
               </div>
             </div>
             <p>Parents leave with more clarity, stronger boundaries, and tools that feel practical rather than performative.</p>
-          </div>
-          <div class="framework-card reveal">
+          </article>
+          <article class="framework-card reveal">
             <div class="framework-card-intro">
               <div class="framework-card-mark">D</div>
               <div>
@@ -180,7 +180,7 @@
               </div>
             </div>
             <p>The work supports long-term family growth through insight, consistency, and habits that can actually be lived.</p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -192,7 +192,7 @@
             <div class="eyebrow">Follow Along</div>
             <h2>Be a part of the journey, on Instagram</h2>
           </div>
-          <a href="https://www.instagram.com/laraib_shaikh10/" target="_blank" rel="noreferrer" class="btn btn-ghost">@laraib_shaikh10 ↗</a>
+          <a href="https://www.instagram.com/laraib_shaikh10/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" aria-label="Follow on Instagram">@laraib_shaikh10 ↗</a>
         </div>
         <div class="insta-grid reveal">
           <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DYv9KIsDmRM/" data-instgrm-version="14"></blockquote>
@@ -207,19 +207,19 @@
         <div class="section-head reveal">
           <div>
             <div class="eyebrow">In Their Words</div>
-            <h2>What Others Parents Say About Our Services</h2>
+            <h2>What Other Parents Say About Our Services</h2>
           </div>
         </div>
         <div class="testi-grid">
           <div class="testi-card reveal">
-            <div class="testi-quote">"Doing one-on-one coaching with Laraib was truly the best thing that happened for my family this year. It encouraged me to deeply understand what true connection and secure attachment mean with my children, and how to embody compassionate parenting without compromising my values.</div>
+            <div class="testi-quote">"Doing one-on-one coaching with Laraib was truly the best thing that happened for my family this year. It encouraged me to deeply understand what true connection and secure attachment mean with my children, and how to embody compassionate parenting without compromising my values."</div>
             <div class="testi-quote">Through this journey, I learned how to love my child unconditionally by gaining insight into child development, developing the skills to regulate and ground myself during challenging emotions, and learning how to be a safe harbour for my children.</div>
             <div class="testi-quote">Laraib herself was incredibly non-judgmental, understanding, and compassionate—always offering an empathetic ear and practical guidance tailored to each specific situation I faced.</div>
             <div class="testi-quote">I highly recommend one-on-one parent coaching with Laraib to anyone wanting to transform their approach to parenting and become a loving yet assertive parent who can confidently handle whatever challenges arise. It’s a powerful mindset shift that helps you make small but meaningful changes—improving your family dynamic in lasting ways, free of guilt or shame."</div>
             <div class="testi-who">— Eden, Mom of 2</div>
           </div>
           <div class="testi-card reveal">
-            <div class="testi-quote">"Laraib has a calm presence that inspires trust and confidence, and she cares so deeply - it shows up in every conversation we’ve shared. She is gentle but shows up with honesty, unafraid to say what you need to hear and a role-model for self-possession. I thank Allah everyday for sending Laraib in my life."</div>
+            <div class="testi-quote">"Laraib has a calm presence that inspires trust and confidence, and she cares so deeply - it shows up in every conversation we've shared. She is gentle but shows up with honesty, unafraid to say what you need to hear and a role-model for self-possession. I thank Allah every day for sending Laraib in my life."</div>
             <div class="testi-who">— Nusrat, Mom of 4</div>
           </div>
           <div class="testi-card reveal">
@@ -240,8 +240,8 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
-        <a href="booking.html">Booking Page</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="booking.html">Booking</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
     <div class="wrap" style="margin-top: 22px; font-size: 13px; color: var(--ink-soft);">© 2026 Laraib Shaikh · Mississauga, Ontario, Canada</div>
