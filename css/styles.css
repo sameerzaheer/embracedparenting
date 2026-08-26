@@ -1237,7 +1237,8 @@ footer {
 
   .framework-grid,
   .insta-grid,
-  .testi-grid {
+  .testi-grid,
+  .expectation-grid {
     grid-template-columns: 1fr;
   }
 
