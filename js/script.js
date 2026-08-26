@@ -59,47 +59,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  const contactForm = document.querySelector('form.contact-form');
-  if (contactForm) {
-    const statusMessage = document.createElement('p');
-    statusMessage.className = 'form-status';
-    contactForm.prepend(statusMessage);
-
-    contactForm.addEventListener('submit', async (event) => {
-      event.preventDefault();
-      statusMessage.className = 'form-status';
-      statusMessage.textContent = 'Sending…';
-
-      const formData = new FormData(contactForm);
-      const body = {
-        name: formData.get('name'),
-        email: formData.get('email'),
-        message: formData.get('message'),
-        company: formData.get('company') || '',
-      };
-
-      try {
-        const response = await fetch('/api/contact', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(body),
-        });
-
-        const result = await response.json();
-        if (!response.ok) {
-          throw new Error(result.error || 'Unable to send');
-        }
-
-        statusMessage.textContent = 'Message sent successfully. Thank you!';
-        statusMessage.classList.add('success');
-        contactForm.reset();
-      } catch (error) {
-        statusMessage.textContent = 'Sorry, something went wrong. Please try again later.';
-        statusMessage.classList.add('error');
-        console.error(error);
-      }
-    });
-  }
+  // Contact form handling removed - no form exists in HTML
 });

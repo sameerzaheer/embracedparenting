@@ -837,12 +837,10 @@ nav.wrap {
 
 .insta-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
   margin-top: 22px;
   align-items: start;
-  overflow-x: auto;
-  overflow-y: hidden;
 }
 
 .insta-grid iframe {
@@ -853,6 +851,22 @@ nav.wrap {
   margin: 0 !important;
   width: 100% !important;
   min-width: 0 !important;
+  max-width: 100% !important;
+  min-height: 320px;
+  background: var(--paper-dim);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.insta-grid blockquote.instagram-media::before {
+  content: 'Instagram content loading...';
+  position: absolute;
+  color: var(--ink-soft);
+  font-size: 14px;
+  opacity: 0.6;
 }
 
 .testi-grid {
@@ -1116,10 +1130,6 @@ footer {
     width: 100%;
   }
 
-  .contact-form {
-    padding-top: 18px;
-  }
-
   .footer-grid {
     grid-template-columns: 1fr;
   }
@@ -1211,6 +1221,7 @@ footer {
 
   .section-head {
     margin-bottom: 24px;
+    padding-top: 20px;
   }
 
   .section-head h2 {
@@ -1234,6 +1245,10 @@ footer {
   .insta-grid blockquote.instagram-media {
     margin: 0 !important;
     width: 100% !important;
+  }
+
+  .insta {
+    padding-top: 60px;
   }
 
   .booking-card {
